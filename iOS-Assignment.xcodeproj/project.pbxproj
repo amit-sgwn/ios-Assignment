@@ -16,6 +16,12 @@
 		B2E0BD262BE3820100805D0D /* iOS_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD252BE3820100805D0D /* iOS_AssignmentTests.swift */; };
 		B2E0BD302BE3820100805D0D /* iOS_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD2F2BE3820100805D0D /* iOS_AssignmentUITests.swift */; };
 		B2E0BD322BE3820100805D0D /* iOS_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD312BE3820100805D0D /* iOS_AssignmentUITestsLaunchTests.swift */; };
+		B2E0BD402BE382D700805D0D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD3F2BE382D600805D0D /* Network.swift */; };
+		B2E0BD432BE3830E00805D0D /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD422BE3830E00805D0D /* PostModel.swift */; };
+		B2E0BD462BE3834000805D0D /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD452BE3834000805D0D /* PostViewModel.swift */; };
+		B2E0BD492BE3917E00805D0D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD482BE3917E00805D0D /* PostCell.swift */; };
+		B2E0BD512BE4972300805D0D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD502BE4972300805D0D /* DetailViewController.swift */; };
+		B2E0BD532BE4BF6300805D0D /* PostCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0BD522BE4BF6300805D0D /* PostCellTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		B2E0BD2B2BE3820100805D0D /* iOS-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E0BD2F2BE3820100805D0D /* iOS_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AssignmentUITests.swift; sourceTree = "<group>"; };
 		B2E0BD312BE3820100805D0D /* iOS_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2E0BD3F2BE382D600805D0D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B2E0BD422BE3830E00805D0D /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		B2E0BD452BE3834000805D0D /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		B2E0BD482BE3917E00805D0D /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B2E0BD502BE4972300805D0D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B2E0BD522BE4BF6300805D0D /* PostCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,10 @@
 		B2E0BD0D2BE381FF00805D0D /* iOS-Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				B2E0BD472BE3916900805D0D /* Views */,
+				B2E0BD442BE3833300805D0D /* ViewModel */,
+				B2E0BD412BE3830400805D0D /* Model */,
+				B2E0BD3E2BE382C000805D0D /* NetworkServices */,
 				B2E0BD0E2BE381FF00805D0D /* AppDelegate.swift */,
 				B2E0BD102BE381FF00805D0D /* SceneDelegate.swift */,
 				B2E0BD122BE381FF00805D0D /* ViewController.swift */,
@@ -106,6 +122,7 @@
 				B2E0BD172BE3820100805D0D /* Assets.xcassets */,
 				B2E0BD192BE3820100805D0D /* LaunchScreen.storyboard */,
 				B2E0BD1C2BE3820100805D0D /* Info.plist */,
+				B2E0BD502BE4972300805D0D /* DetailViewController.swift */,
 			);
 			path = "iOS-Assignment";
 			sourceTree = "<group>";
@@ -114,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E0BD252BE3820100805D0D /* iOS_AssignmentTests.swift */,
+				B2E0BD522BE4BF6300805D0D /* PostCellTest.swift */,
 			);
 			path = "iOS-AssignmentTests";
 			sourceTree = "<group>";
@@ -125,6 +143,38 @@
 				B2E0BD312BE3820100805D0D /* iOS_AssignmentUITestsLaunchTests.swift */,
 			);
 			path = "iOS-AssignmentUITests";
+			sourceTree = "<group>";
+		};
+		B2E0BD3E2BE382C000805D0D /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0BD3F2BE382D600805D0D /* Network.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		B2E0BD412BE3830400805D0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0BD422BE3830E00805D0D /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2E0BD442BE3833300805D0D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0BD452BE3834000805D0D /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2E0BD472BE3916900805D0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0BD482BE3917E00805D0D /* PostCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E0BD492BE3917E00805D0D /* PostCell.swift in Sources */,
+				B2E0BD462BE3834000805D0D /* PostViewModel.swift in Sources */,
 				B2E0BD132BE381FF00805D0D /* ViewController.swift in Sources */,
+				B2E0BD432BE3830E00805D0D /* PostModel.swift in Sources */,
 				B2E0BD0F2BE381FF00805D0D /* AppDelegate.swift in Sources */,
+				B2E0BD402BE382D700805D0D /* Network.swift in Sources */,
 				B2E0BD112BE381FF00805D0D /* SceneDelegate.swift in Sources */,
+				B2E0BD512BE4972300805D0D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E0BD262BE3820100805D0D /* iOS_AssignmentTests.swift in Sources */,
+				B2E0BD532BE4BF6300805D0D /* PostCellTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
